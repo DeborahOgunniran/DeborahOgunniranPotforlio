@@ -6,7 +6,7 @@
 }
 
 * {
-    margin: 0%;
+    margin: 0;
     text-decoration: none;
     scroll-behavior: smooth;
     outline: none;
@@ -23,6 +23,7 @@ html{
 body{
     background-color: var(--bg-color);
     color: var(--second-bg-color);
+   
 }
 
 header{
@@ -32,7 +33,6 @@ header{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    /* background-color: rgb(110, 98, 38); */
     z-index: 100%;
 }
 
@@ -141,9 +141,7 @@ section {
     display: flex;
     align-items: center;
     padding:  0 9%;
-    /* background: url('/IMG/screen2.png') no-repeat; */
-    background-size: cover;
-    background-position: center;
+    
 }
 .content{
   max-width: 60rem; 
@@ -358,7 +356,7 @@ span{
 
 .projet{
     background: #44657c;
-    padding: 3em ;
+    padding: 3em;
 }
 
  h1{
@@ -469,6 +467,10 @@ form button{
     color: white;
 }
 
+
+
+
+
 @media(max-width: 767px) {
     .menu {
         flex-direction: column;
@@ -481,11 +483,161 @@ form button{
         right: -100%;
         z-index: 100;
         transition: all 0.2s ease-in-out;
-        background-color: #C9B7EF;
+        background-color: #213140;
     }
 
     .menu li {margin-top: 40px;}
     .menu li a {padding: 10px;}
     .open-menu, .close-menu {display: block;}
     #check:checked ~ .menu{right: 0;}
+
+    .content h1{
+        font-size: 1.1rem;
+        line-height: 1;
+        font-weight: 100;
+        /* display: flex; */
+        
+    }
+
+    .btn{
+  
+        display: flex;
+        justify-content: space-between;
+        width: 20rem;
+        height: 3.5em;
+        cursor: pointer;
+        
+        
+    }
+
+
+    header{
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 2rem 1%;
+        
+    }
+    
+    .nav-bar {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        position: relative;
+        /* padding: 12px 20px; */
+    }
+    
+    .logo{
+        font-size: 1.5rem;
+        color: var(--text-color);
+        font-weight: 400;
+    }
+
+    form{
+        width: 80%;
+        padding: 0 4em;
+        
+    }
+
+    .year img{
+        width: 100px;
+    }
+
+    .school h1{
+        font-size: 1em;
+    }
+
+    .student h3{
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .projet{
+       padding: 0;
+    }
+
+    .content p{
+        font-size: 1em;
+        width: 80%;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 1em;
+    }
+
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:4%;
+        
+    }
+
+    .content .student {
+        position: relative;
+       
+    }
+
+    .btn .one {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        flex-direction: column;
+        font-weight: 200;
+        font-size: 1em;
+        background: var(--main-color);
+        border: 2rem solid var(--main-color);
+        letter-spacing: 0;
+        border-radius: 0.5rem;
+        color: var(--bg-color);
+        
+    }
+
+    .box{
+        padding: 2em;
+    }
+
+    .content{
+        max-width: 25rem;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    
+}
+
+@media(min-width: 767px) and (max-width:1249px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: all 0.2s ease-in-out;
+        background-color: #213140;
+    }
+
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu, .close-menu {display: block;}
+    #check:checked ~ .menu{right: 0;}
+
+    header{
+        width: 79%;
+    }
+
 }
